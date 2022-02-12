@@ -1,0 +1,238 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Supervaga.Api</name>
+    </assembly>
+    <members>
+        <member name="T:Supervaga.Controllers.AdController">
+            <summary>
+            AdController
+            </summary>
+        </member>
+        <member name="M:Supervaga.Controllers.AdController.#ctor(Domain.Shared.Contracts.Repositories.IRepository{Supervaga.Domain.Ads.Ad},Domain.Shared.Contracts.Repositories.IRepository{Supervaga.Domain.Users.User})">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Supervaga.Controllers.AdController.Get(System.Int32,System.Int32)">
+            <summary>Get all Ads from Database</summary>
+            <remarks>
+            Sample request
+            GET /v1/ads
+            </remarks>
+            <returns>Saved Ads list</returns>
+            <response code="200">Saved Ads list</response>
+        </member>
+        <member name="M:Supervaga.Controllers.AdController.Search(System.String,System.Int32,System.Int32)">
+            <summary>
+            Get all matched Ads from Database
+            </summary>
+            <param name="keyword">Keyword</param>
+            <param name="page">Current page</param>
+            <param name="limit">Ads limit</param>
+            <remarks>
+            Sample request
+            GET /v1/ads/search/{keyword}
+            </remarks>
+            <returns>Saved Ads list</returns>
+            <response code="200">Saved Ads list</response>
+            <response code="400">No Ad matching the keyword</response>
+        </member>
+        <member name="M:Supervaga.Controllers.AdController.Get(System.Guid)">
+            <summary>
+            Get matching Ad ID from Database
+            </summary>
+            <remarks>
+            Sample request
+            GET /v1/ads/{id}
+            </remarks>
+            <returns>Ad matching the ID</returns>
+            <response code="200">Saved Ads matching the ID</response>
+            <response code="400">No Ad matchs the ID</response>
+        </member>
+        <member name="M:Supervaga.Controllers.AdController.Post(Domain.Ads.Handlers.CreateAdHandler,Supervaga.Domain.Ads.Commands.CreateAdCommand)">
+            <summary>
+            Save received Ad on Database
+            </summary>
+            <param name="command">Ad to be saved on database</param>
+            <param name="handler">Handler for Ad creation</param>
+            <remarks>
+            Sample request
+            POST /v1/ads/
+            {
+                "userId": "09df2cb0-2622-4ae2-9b13-f6fb6986d09a",
+                "title": "any title",
+                "category": "any category",
+                "description": "any description of 15 characters",
+                "address": "any address",
+                "audienceGender": "string",
+                "createdAt": "2022-01-28T00:35:04.635Z",
+                "expiresAt": "2022-02-28T00:24:51.590Z",
+                "requirements": [
+                    {
+                        "adId": "6c7b601d-3e7f-4155-ba16-e4ed7f1d5ed0",
+                        "Title": "requirement 1"
+                    },
+                    {
+                        "adId": "6c7b601d-3e7f-4155-ba16-e4ed7f1d5ed0",
+                        "Title": "requirement 2"
+                    }
+                ],
+                "advantages": [
+                    {
+                        "adId": "6c7b601d-3e7f-4155-ba16-e4ed7f1d5ed0",
+                        "title": "advantage 1"
+                    },
+                    {
+                        "adId": "6c7b601d-3e7f-4155-ba16-e4ed7f1d5ed0",
+                        "title": "advantage 2"
+                    },
+                    {
+                        "adId": "6c7b601d-3e7f-4155-ba16-e4ed7f1d5ed0",
+                        "title": "advantage 3"
+                    }
+                ],
+                "salaryOffer": 400
+            }
+            </remarks>
+            <returns>Saved Ad</returns>
+            <response code="200">Success saving Ad</response>
+            <response code="400">Error validating data</response>
+        </member>
+        <member name="M:Supervaga.Controllers.AdController.Put(Domain.Ads.Handlers.UpdateAdHandler,Supervaga.Domain.Ads.Commands.UpdateAdCommand,System.Guid)">
+            <summary>
+            Update received Ad on database
+            </summary>
+            <param name="id">Ad ID to be updated</param>
+            <param name="command">Ad to be updated</param>
+            <param name="handler">Handler for the update</param>
+            <remarks>
+            Sample request
+            PUT /v1/ads/{id}
+            {
+                "title": "any title updated",
+            }
+            </remarks>
+            <returns>Updated Ad</returns>
+            <response code="200">Success updating Ad</response>
+            <response code="400">Error validating data</response>
+            <response code="400">No match for the ID</response>
+        </member>
+        <member name="M:Supervaga.Controllers.AdController.Delete(Domain.Ads.Handlers.DeleteAdHandler,System.Guid)">
+            <summary>
+            Remove Ad by ID from Database
+            </summary>
+            <param name="id">Ad ID to be removed</param>
+            <param name="handler">Handler for remove Ad</param>
+            <remarks>
+            Sample request
+            DELETE /v1/ads/{id}
+            </remarks>
+            <returns>Removed Ad ID</returns>
+            <response code="200">Success removing Ad</response>
+            <response code="400">Error validating data</response>
+            <response code="400">No matchs for the ID</response>
+        </member>
+        <member name="T:Supervaga.Controllers.ApplicationController">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Supervaga.Controllers.ApplicationController.#ctor(Domain.Shared.Contracts.Repositories.IRepository{Supervaga.Domain.Applications.Application},Domain.Shared.Contracts.Repositories.IRepository{Supervaga.Domain.Ads.Ad})">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Supervaga.Controllers.ApplicationController.Get(System.Int32,System.Int32)">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Supervaga.Controllers.ApplicationController.Search(System.String,System.Int32,System.Int32)">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Supervaga.Controllers.ApplicationController.Get(System.Guid)">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Supervaga.Controllers.ApplicationController.Put(Domain.Applications.Handlers.UpdateApplicationHandler,Supervaga.Domain.Applications.Commands.UpdateApplicationCommand,System.Guid)">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Supervaga.Controllers.ApplicationController.Delete">
+            <summary>
+            </summary>
+        </member>
+        <member name="T:Supervaga.Controllers.UserController">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Supervaga.Controllers.UserController.#ctor(Domain.Shared.Contracts.Repositories.IRepository{Supervaga.Domain.Users.User})">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Supervaga.Controllers.UserController.Get(System.Int32,System.Int32)">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Supervaga.Controllers.UserController.Get(System.Guid)">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Supervaga.Controllers.UserController.Post(Domain.Users.Handlers.CreateUserHandler,Supervaga.Domain.Users.Commands.CreateUserCommand)">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Supervaga.Controllers.UserController.Put(Domain.Users.Handlers.UpdateUserHandler,Supervaga.Domain.Users.Commands.UpdateUserCommand,System.Guid)">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Supervaga.Controllers.UserController.Delete(Domain.Users.Handlers.DeleteUserHandler,System.Guid)">
+            <summary>
+            </summary>
+        </member>
+        <member name="T:Supervaga.Api.Controllers.AuthController">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Supervaga.Api.Controllers.AuthController.#ctor(Domain.Shared.Contracts.Repositories.IRepository{Supervaga.Domain.Users.User})">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Supervaga.Api.Controllers.AuthController.Login(Supervaga.Domain.Auth.Handlers.LoginHandler,Supervaga.Domain.Auth.Commands.LoginCommand)">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Supervaga.Api.Controllers.AuthController.GoogleLogin(Supervaga.Domain.Auth.Handlers.SocialAuthHandler,Supervaga.Domain.Auth.Commands.SocialAuthCommand)">
+            <summary>
+            </summary>
+        </member>
+        <member name="T:Supervaga.Api.Controllers.DocumentController">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Supervaga.Api.Controllers.DocumentController.#ctor(Domain.Shared.Contracts.Repositories.IRepository{Supervaga.Domain.Documents.Document})">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Supervaga.Api.Controllers.DocumentController.Upload(Supervaga.Domain.Documents.Hanlders.UploadHandler,System.Collections.Generic.List{Microsoft.AspNetCore.Http.IFormFile})">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Supervaga.Api.Controllers.DocumentController.Download(System.Guid,Supervaga.Domain.Documents.Handlers.DownloadHandler)">
+            <summary>
+            </summary>
+        </member>
+        <member name="T:Supervaga.Api.DI.APIDocumentation">
+            <summary></summary>
+        </member>
+        <member name="M:Supervaga.Api.DI.APIDocumentation.Add(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary></summary>
+        </member>
+        <member name="T:Supervaga.Api.DI.Startup">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Supervaga.Api.DI.Startup.Call(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            </summary>
+        </member>
+    </members>
+</doc>

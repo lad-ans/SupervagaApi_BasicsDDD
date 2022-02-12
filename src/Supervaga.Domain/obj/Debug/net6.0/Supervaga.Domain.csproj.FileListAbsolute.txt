@@ -1,0 +1,12 @@
+/Volumes/LaynDev/DEV/DotNetProjects/Personal/SuperVaga/src/Supervaga.Domain/bin/Debug/net6.0/Supervaga.Domain.deps.json
+/Volumes/LaynDev/DEV/DotNetProjects/Personal/SuperVaga/src/Supervaga.Domain/bin/Debug/net6.0/Supervaga.Domain.dll
+/Volumes/LaynDev/DEV/DotNetProjects/Personal/SuperVaga/src/Supervaga.Domain/bin/Debug/net6.0/ref/Supervaga.Domain.dll
+/Volumes/LaynDev/DEV/DotNetProjects/Personal/SuperVaga/src/Supervaga.Domain/bin/Debug/net6.0/Supervaga.Domain.pdb
+/Volumes/LaynDev/DEV/DotNetProjects/Personal/SuperVaga/src/Supervaga.Domain/obj/Debug/net6.0/Supervaga.Domain.csproj.AssemblyReference.cache
+/Volumes/LaynDev/DEV/DotNetProjects/Personal/SuperVaga/src/Supervaga.Domain/obj/Debug/net6.0/Supervaga.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Volumes/LaynDev/DEV/DotNetProjects/Personal/SuperVaga/src/Supervaga.Domain/obj/Debug/net6.0/Supervaga.Domain.AssemblyInfoInputs.cache
+/Volumes/LaynDev/DEV/DotNetProjects/Personal/SuperVaga/src/Supervaga.Domain/obj/Debug/net6.0/Supervaga.Domain.AssemblyInfo.cs
+/Volumes/LaynDev/DEV/DotNetProjects/Personal/SuperVaga/src/Supervaga.Domain/obj/Debug/net6.0/Supervaga.Domain.csproj.CoreCompileInputs.cache
+/Volumes/LaynDev/DEV/DotNetProjects/Personal/SuperVaga/src/Supervaga.Domain/obj/Debug/net6.0/Supervaga.Domain.dll
+/Volumes/LaynDev/DEV/DotNetProjects/Personal/SuperVaga/src/Supervaga.Domain/obj/Debug/net6.0/ref/Supervaga.Domain.dll
+/Volumes/LaynDev/DEV/DotNetProjects/Personal/SuperVaga/src/Supervaga.Domain/obj/Debug/net6.0/Supervaga.Domain.pdb

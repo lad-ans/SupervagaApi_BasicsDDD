@@ -1,0 +1,41 @@
+﻿<Properties StartupConfiguration="{A6D2749B-0696-4A82-B598-6063DEB67FA6}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../Supervaga.Api/Program.cs">
+    <Files>
+      <File FileName="../Supervaga.Api/Program.cs" Line="25" Column="22" />
+      <File FileName="../Supervaga.Api/DI/APIDocumentation.cs" Line="11" Column="23" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Option id="ShowAllFiles" value="True" />
+          <Node name="Supervaga" expanded="True">
+            <Node name="Supervaga.Api" expanded="True" selected="True">
+              <Node name="DI" expanded="True" />
+            </Node>
+            <Node name="Supervaga.Domain" expanded="True">
+              <Node name="Ads" expanded="True">
+                <Node name="Commands" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="Supervaga" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Supervaga.Tests PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Supervaga.Api PreferredExecutionTarget="/Applications/Safari.app" />
+</Properties>

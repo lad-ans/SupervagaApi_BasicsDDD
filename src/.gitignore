@@ -1,0 +1,4 @@
+.vscode
+/Supervaga.Api/appsettings.Development.json
+/Supervaga.Api/appsettings.json
+/Supervaga.Domain/Settings.cs
